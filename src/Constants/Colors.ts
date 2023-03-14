@@ -5,6 +5,7 @@ export const Colors = {
   grayText: '#9B9898',
   greenIcon: '#00B833',
   redIcon: '#FF0000',
+  detailsHeader: '#CFD6FF',
 };
 
 export default Colors;

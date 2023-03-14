@@ -25,6 +25,9 @@ function App() {
             <Stack.Screen
               name={Screens.DETAILS_SCREEN}
               component={DetailsScreen}
+              options={{
+                headerShown: false,
+              }}
             />
           </Stack.Navigator>
         </NavigationContainer>
