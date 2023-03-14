@@ -13,6 +13,8 @@ const PointsComponent: React.FC = () => {
     products.forEach(product => {
       if (!product.is_redemption) {
         points += product.points;
+      } else {
+        points -= product.points;
       }
     });
     return points;
@@ -25,7 +27,9 @@ const PointsComponent: React.FC = () => {
   return (
     <View style={PointsComponentStyle.mainContainer}>
       <Text style={PointsComponentStyle.month}>{currentDate}</Text>
-      <Text style={PointsComponentStyle.points}>{`${totalPoints} pts`}</Text>
+      <Text id={'pointsTotal'} style={PointsComponentStyle.points}>
+        {`${totalPoints} pts`}
+      </Text>
     </View>
   );
 };
